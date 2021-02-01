@@ -1,0 +1,37 @@
+@font-face
+{
+    font-family: 'play';
+    src: url('../fonts/PlayfairDisplay-VariableFont_wght.ttf')
+}
+@font-face
+{
+    font-family: 'monstl';
+    src: url('../fonts/Montserrat-Light.ttf')
+}
+
+@font-face
+{
+    font-family: 'monst';
+    src: url('../fonts/Montserrat-Thin.ttf')
+}
+@font-face
+{
+    font-family: 'para';
+    src:url('../font/Louis\ George\ Cafe\ Light.ttf');
+}
+@font-face
+{
+    font-family: 'ul';
+    src: url('../fonts/Ubuntu-Light.ttf')
+}
+
+@font-face
+{
+    font-family: 'um';
+    src: url('../fonts/Ubuntu-Medium.ttf')
+}
+@font-face
+{
+    font-family: 'ur';
+    src: url('../fonts/Ubuntu-Regular.ttf');
+}

@@ -1,0 +1,150 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background-image: url("../images/01011094_polarr.jpg");  /*en attendant le php */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+/* -------------------------- Debut de la navbar -------------------------- */
+a:visited
+{
+    text-decoration: none;
+    color: white;
+}
+a:link
+{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 125px;
+    width: auto;
+    background-color: rgba(0, 0, 0, 0.603);
+    color: rgb(255, 255, 255);
+}
+
+
+.logo
+{
+    flex-grow: 1;
+    font-family: 'ul';
+    font-size: 30px;
+    line-height: 50px;
+    letter-spacing: 3px;
+    color: rgba(255, 255, 255, 0.925);
+    margin-top: 12px;
+    margin-left: 50px;
+
+}
+
+.home
+{
+    font-family: "Courier New", Courier, monospace;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-right: 50px;
+    font-size: 18px;
+    transition-duration: 0.4s;
+}
+.home:hover
+{
+    color:rgb(189, 131, 66);
+    font-size: 20px
+}
+
+.photo
+{
+    font-family: "Courier New", Courier, monospace;
+    padding-top: 53px;
+    font-size: 18px;
+    transition-duration: 0.4s;
+
+}
+
+.contact
+{
+    font-family: "Courier New", Courier, monospace;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 50px;
+    margin-left: 50px;
+    font-size: 18px;
+    transition-duration: 0.4s;
+
+}
+.contact:hover
+{
+    color:rgb(189, 131, 66);
+    font-size: 20px
+}
+
+.liste
+{
+    /* display: none; je préférais utiliser cette façon mais la transition du block qui apparait en fondu ne fonctionne plus */
+    height: 230px;
+    width: 150px;
+    background-color: rgba(0, 0, 0, 0.863);
+    margin-top: 54px;
+    opacity: 0.0;
+    transition: all 500ms ease-in-out;
+}
+
+.photo:hover .liste
+{
+    /* display: block; je préférais utiliser cette façon mais la transition du block qui apparait en fondu ne fonctionne plus */
+    opacity: 1.0;
+    transition-delay: 250ms;
+}
+
+.photo:hover
+{
+    color:rgb(189, 131, 66);
+    font-size: 19px
+}
+
+li
+{
+    list-style:none;
+    font-size: 15px;
+    padding-top: 18px;
+    padding-left: 15px;
+    transition-duration: 0.4s;
+    color: white;
+}
+
+li:hover
+{
+    color: rgb(189, 131, 66); ;
+    padding-left: 25px;
+}
+/* -------------------------- Fin de la navbar -------------------------- */
+
+.acceuil
+{
+
+    text-align: center;
+}
+h2
+{
+    color: rgba(255, 255, 255, 0.856);
+    font-size: 28px;
+    padding-top: 150px;
+}
+h1
+{
+    color: white;
+    font-size: 55px;
+    padding-top: 10px;
+}
