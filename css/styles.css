@@ -35,7 +35,6 @@ a:link
     color: rgb(255, 255, 255);
 }
 
-
 .logo
 {
     flex-grow: 1;
@@ -46,7 +45,6 @@ a:link
     color: rgba(255, 255, 255, 0.925);
     margin-top: 12px;
     margin-left: 50px;
-
 }
 
 .home
@@ -133,18 +131,17 @@ li:hover
 
 .acceuil
 {
-
     text-align: center;
+    margin-top: 25vh;   /* à tester*/
+    transform: translateY(-50%); /* à tester*/
 }
 h2
 {
-    color: rgba(255, 255, 255, 0.856);
+    color: rgba(255, 255, 255, 0.918);
     font-size: 28px;
-    padding-top: 150px;
 }
 h1
 {
     color: white;
     font-size: 55px;
-    padding-top: 10px;
 }

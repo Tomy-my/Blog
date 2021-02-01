@@ -6,13 +6,13 @@
         <link rel="stylesheet" href="css/styles.css" />
         <link rel="stylesheet" href="css/resolutions.css" />
         <link rel="icon" href="images/favicon.png" />
-        <title>intégration php</title>
+        <title>en attente d'un titre</title>
     </head>
         <body>
             
             <div class="navbar">
-                <div class="logo">TOMY<br> Photographie</div>
-                <a href="#" class="home">Home</a>
+                <div class="logo">TOMY <br> &nbsp  Photographie </div>
+                <a href="index.php" class="home">Home</a>
                 <div class="photo">
                     <a href="#" class="photo">Photographies</a>
                 <div class="liste">
@@ -26,6 +26,6 @@
                     </ul>
                 </div>
                 </div>
-                <a href="#" class="contact">Me contacter</a>
+                <a href="contact.php" class="contact">Me contacter</a>
             </div>
 
