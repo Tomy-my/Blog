@@ -19,14 +19,6 @@ Article upload !
     $titre = $_POST["titre"]; //Le $_POST va aller chercher dans le formulaire "name"
     $contenu = $_POST["contenu"];
 
-    if (!isset($titre)){
-      die("S'il vous plaît entrez votre nom");
-    }
-    if (!isset($contenu)){ 
-      die("S'il vous plaît entrez votre adresse e-mail"); // Seulement lui fonctionne mais mal. Je comprends pas trop leur fonctionnement 
-    }
-
-
     //Ouvre une nouvelle connexion au serveur MySQL
     $mysqli = new mysqli($host, $username, $password, $database);
     

@@ -17,9 +17,9 @@
                     <a href="#" class="photo">PHOTOGRAPHIES</a>
                 <div class="liste">
                     <ul>
-                    <a href="test.php"><li>Paysages</li></a>
-                    <a href="#"><li>Voitures</li></a>
-                    <a href="#"><li>En création</li></a>
+                    <a href="paysages.php"><li>Paysage</li></a>
+                    <a href="#"><li>Papillon</li></a>
+                    <a href="#"><li>Voiture</li></a>
                     <a href="#"><li>En création</li></a>
                     <a href="#"><li>En création</li></a>
                     <a href="#"><li>En création</li></a>

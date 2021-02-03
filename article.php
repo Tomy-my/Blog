@@ -59,9 +59,9 @@ else { # Dans cette partie, on écrit le code que l'utilisateur administrateur v
                     <a href="#" class="photo">PHOTOGRAPHIES</a>
                 <div class="liste">
                     <ul>
-                    <a href="test.php"><li>Paysages</li></a>
-                    <a href="#"><li>Voitures</li></a>
-                    <a href="#"><li>En création</li></a>
+                    <a href="paysages.php"><li>Paysage</li></a>
+                    <a href="#"><li>Papillon</li></a>
+                    <a href="#"><li>Voiture</li></a>
                     <a href="#"><li>En création</li></a>
                     <a href="#"><li>En création</li></a>
                     <a href="#"><li>En création</li></a>
@@ -81,7 +81,11 @@ else { # Dans cette partie, on écrit le code que l'utilisateur administrateur v
                         </form>
                     </div>
                     <div class="mini2">
-#
+                        <form action="upload.php" method="post" enctype="multipart/form-data">
+                            Select Image File to Upload:
+                            <input type="file" name="file">
+                            <input type="submit" name="submit" value="Upload">
+                        </form>
                     </div>
                     <div class="mini3">
 #
