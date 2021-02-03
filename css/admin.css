@@ -3,7 +3,10 @@
     margin: 0;
     padding: 0;
 }
-
+body
+{
+    background-color: #262d3f;
+}
 /* -------------------------- Debut de la navbar -------------------------- */
 a:visited
 {
@@ -124,19 +127,31 @@ li:hover
 }
 /* -------------------------- Fin de la navbar -------------------------- */
 
-.acceuil
+.container
 {
-    text-align: center;
-    margin-top: 25vh;   /* à tester*/
-    transform: translateY(-50%); /* à tester*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
-h2
+
+.mini1
 {
-    color: rgba(255, 255, 255, 0.918);
-    font-size: 28px;
+    width: 150px;
+    height: 250px;
+    background-color: lightslategray;
 }
-h1
+
+.mini2
 {
-    color: white;
-    font-size: 55px;
+    width: 150px;
+    height: 250px;
+    background-color: lightslategray;
+}
+
+.mini3
+{
+
+    width: 150px;
+    height: 250px;
+    background-color: lightslategray;
 }

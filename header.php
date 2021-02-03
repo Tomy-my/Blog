@@ -11,13 +11,13 @@
         <body>
             
             <div class="navbar">
-                <div class="logo">TOMY <br> &nbsp  Photographie </div>
-                <a href="index.php" class="home">Home</a>
+                <div class="logo"><a href="article.php">TOMY</a> <br> &nbsp  Photographie </div>
+                <a href="index.php" class="home">HOME</a>
                 <div class="photo">
-                    <a href="#" class="photo">Photographies</a>
+                    <a href="#" class="photo">PHOTOGRAPHIES</a>
                 <div class="liste">
                     <ul>
-                    <a href="#"><li>Paysages</li></a>
+                    <a href="test.php"><li>Paysages</li></a>
                     <a href="#"><li>Voitures</li></a>
                     <a href="#"><li>En création</li></a>
                     <a href="#"><li>En création</li></a>
@@ -26,6 +26,6 @@
                     </ul>
                 </div>
                 </div>
-                <a href="contact.php" class="contact">Me contacter</a>
+                <a href="#" class="contact">CONTACT</a>
             </div>
 
