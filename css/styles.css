@@ -7,8 +7,22 @@
 body
 {
     background-color: #161616;
+    animation-name: chargement;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1.8s;
 }
 
+
+
+@keyframes chargement {                         
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
 /* -------------------------- Debut de la navbar -------------------------- */
 a:visited
 {
@@ -141,11 +155,15 @@ h2
 {
     color: rgba(255, 255, 255, 0.918);
     font-size: 28px;
+    font-family: 'ul';
+    font-weight: lighter;
 }
 h1
 {
-    color: white;
+    color: rgba(255, 255, 255, 0.932);
     font-size: 55px;
+    font-family: 'ul';
+    font-weight: lighter;
 }
 
 /* -------------------------- Paysages-------------------------- */
@@ -246,4 +264,84 @@ h1
     width: 50px;
     left: 171px;
     padding-top: 320px;
+}
+
+
+#boite_papillon
+{
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    width: 200vh;
+    height: 630px;
+    background-color: #030303;
+    color: cornsilk;
+}
+
+#boite_papillon
+{
+    padding-top: 15px;
+}
+
+#boite_papillon img
+{
+    position: absolute;
+    order: 1;
+    width: 800px;
+}
+
+#info_bulle_G
+{
+    position: absolute;
+    width: 230px;
+    padding-right: 1170px;
+    animation-name: bulle;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 0.6s;
+}
+@keyframes bulle {                         
+    0% {
+        padding-right: 1800px;
+    }
+    100% {
+        padding-right: 1170px;
+    }
+  }
+#info_bulle_G h2
+{
+    font-size: 35px;
+}
+#info_bulle_G h3
+{
+    padding-top: 20px;
+    color: #ae9f6a;
+}
+#info_bulle_G p
+{
+    padding-top: 15px;
+}
+
+#info_bulle_D
+{
+    position: absolute;
+    width: 230px;
+    padding-left: 1200px;
+    font-size: 15px;
+}
+
+#info_bulle_D h2
+{
+    font-size: 35px;
+}
+#info_bulle_D h3
+{
+    padding-top: 20px;
+    color: #ae9f6a;
+}
+#info_bulle_D p
+{
+    padding-top: 15px;
 }

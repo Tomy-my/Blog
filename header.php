@@ -18,7 +18,7 @@
                 <div class="liste">
                     <ul>
                     <a href="paysages.php"><li>Paysage</li></a>
-                    <a href="#"><li>Papillon</li></a>
+                    <a href="papillon.php"><li>Papillon</li></a>
                     <a href="#"><li>Voiture</li></a>
                     <a href="#"><li>En création</li></a>
                     <a href="#"><li>En création</li></a>

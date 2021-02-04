@@ -91,6 +91,12 @@ else { # Dans cette partie, on écrit le code que l'utilisateur administrateur v
 #
                     </div>
                 </div>
+                <!-- <form method="post" action="papillonDBconfig.php">
+                            <input type="text" name="nom" placeholder=" #" /><br />
+                            <input  type="text" name="explication" placeholder=" blablabla" /><br />
+                            <input type="submit" value="Submit" />
+                        </form>
+                        </form> -->
 <?php
 }
 
