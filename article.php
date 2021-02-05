@@ -48,7 +48,7 @@ else { # Dans cette partie, on écrit le code que l'utilisateur administrateur v
         <link rel="stylesheet" href="css/fonts.css" />
         <link rel="stylesheet" href="css/admin.css" />
         <link rel="icon" href="images/favicon.png" />
-        <title>en attente d'un titre</title>
+        <title>Admin</title>
     </head>
         <body>
             

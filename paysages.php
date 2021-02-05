@@ -1,4 +1,6 @@
-<?php include("header.php"); ?>
+<?php $title = "Paysage"; 
+
+include("header.php"); ?>
         
 <body>
     <div class="flex_paysages">

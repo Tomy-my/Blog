@@ -1,4 +1,7 @@
-<?php include("header.php"); ?>
+<?php $title = "Home"; 
+
+include("header.php"); ?>
+
 <style>
 body
 {
