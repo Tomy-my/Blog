@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="css/fonts.css" />
@@ -26,13 +26,11 @@
                     <ul>
                     <a href="paysages.php"><li>Paysage</li></a>
                     <a href="papillon.php"><li>Papillon</li></a>
-                    <a href="#"><li>Voiture</li></a>
-                    <a href="#"><li>En création</li></a>
-                    <a href="#"><li>En création</li></a>
+                    <a href="voiture.php"><li>Voiture</li></a>
                     <a href="#"><li>En création</li></a>
                     </ul>
                 </div>
                 </div>
-                <a href="#" class="contact">CONTACT</a>
+                <a href="contact.php" class="contact">CONTACT</a>
             </div>
 

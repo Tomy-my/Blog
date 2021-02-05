@@ -41,36 +41,41 @@ if (!isset($_SESSION['connecte']) or $_SESSION['connecte'] == false) { # on vér
 else { # Dans cette partie, on écrit le code que l'utilisateur administrateur verras
 
     ?>
-    <!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="fr">
     <head>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="css/fonts.css" />
-        <link rel="stylesheet" href="css/admin.css" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="css/resolutions.css" />
         <link rel="icon" href="images/favicon.png" />
-        <title>Admin</title>
+        <title>Tomy : Admin</title>
     </head>
         <body>
             
             <div class="navbar">
-                <div class="logo"><a href="article.php">TOMY</a> <br> &nbsp  Photographie </div>
+                <div class="logo">
+                    <a href="article.php">
+                        <div id="T">T</div>
+                        <div id="O">O</div>
+                        <div id="M">M</div>
+                        <div id="Y">Y</div></a> <br> &nbsp  
+                        <div id="pho">Photographie</div>
+                </div>
                 <a href="index.php" class="home">HOME</a>
                 <div class="photo">
                     <a href="#" class="photo">PHOTOGRAPHIES</a>
                 <div class="liste">
                     <ul>
                     <a href="paysages.php"><li>Paysage</li></a>
-                    <a href="#"><li>Papillon</li></a>
-                    <a href="#"><li>Voiture</li></a>
-                    <a href="#"><li>En création</li></a>
-                    <a href="#"><li>En création</li></a>
+                    <a href="papillon.php"><li>Papillon</li></a>
+                    <a href="voiture.php"><li>Voiture</li></a>
                     <a href="#"><li>En création</li></a>
                     </ul>
                 </div>
                 </div>
                 <a href="#" class="contact">CONTACT</a>
             </div>
-
                 <div class="container">
                     <div class="mini1">
                         <form method='post' action='deconnexion.php'> <input type='submit' value='Se déconnecter' /> </form>

@@ -180,10 +180,10 @@ a:link
 {
     position: absolute;
     /* display: none; je préférais utiliser cette façon mais la transition du block qui apparait en fondu ne fonctionne plus */
-    height: 230px;
+    height: 145px;
     width: 150px;
     background-color: rgba(0, 0, 0, 0.863);
-    margin-top: 54px;
+    margin-top: 70px;
     opacity: 0.0;
     transition: all 500ms ease-in-out;
     z-index: 9;

@@ -26,8 +26,9 @@ a:link
     justify-content: flex-end;
     height: 125px;
     width: auto;
-    background-color: rgba(0, 0, 0, 0.603);
+    background-color: rgba(0, 0, 0, 0.815);
     color: rgb(255, 255, 255);
+    z-index: 5;
 }
 
 .logo
@@ -42,6 +43,79 @@ a:link
     margin-left: 50px;
 }
 
+#T
+{
+    animation-name: T;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 0.9s;
+}
+@keyframes T {                         
+    0% {
+        margin-left: -100px;
+    }
+    100% {
+        margin-left: 0px;
+    }
+  }
+#O
+{
+    margin-top: -50px; 
+    padding-left: 17px;
+    animation-name: O;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 0.7s;
+}
+@keyframes O {                         
+    0% {
+        margin-left: -90px;
+    }
+    100% {
+        margin-left: 0px;
+    }
+  }
+#M
+{
+    margin-top: -50px;
+    padding-left: 42px;
+    animation-name: M;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 0.6s;
+}
+@keyframes M {                         
+    0% {
+        margin-top: -100px;
+    }
+    100% {
+        margin-top: -50px;
+    }
+  }
+#Y
+{
+    margin-top: -50px; 
+    padding-left: 72px;
+    animation-name: Y;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 0.6s;
+}
+@keyframes Y {                         
+    0% {
+        margin-top: -100px;
+    }
+    100% {
+        margin-top: -50px;
+    }
+  }
+
+#pho
+{
+    margin-top: -100px;
+    padding-left: 15px;
+}
+
 .home
 {
     font-family: 'ul';
@@ -54,7 +128,7 @@ a:link
 }
 .home:hover
 {
-    color:#ffb866;
+    color:#ae9f6a;
     font-size: 14px
 }
 
@@ -82,19 +156,21 @@ a:link
 }
 .contact:hover
 {
-    color:#ffb866;
+    color:#ae9f6a;
     font-size: 14px
 }
 
 .liste
 {
+    position: absolute;
     /* display: none; je préférais utiliser cette façon mais la transition du block qui apparait en fondu ne fonctionne plus */
-    height: 230px;
+    height: 145px;
     width: 150px;
     background-color: rgba(0, 0, 0, 0.863);
-    margin-top: 54px;
+    margin-top: 70px;
     opacity: 0.0;
     transition: all 500ms ease-in-out;
+    z-index: 9;
 }
 
 .photo:hover .liste
@@ -106,11 +182,11 @@ a:link
 
 .photo:hover
 {
-    color:#ffb866;
+    color:#ae9f6a;
     font-size: 14px
 }
 
-li
+.liste li
 {
     list-style:none;
     font-size: 11px;
@@ -120,9 +196,9 @@ li
     color: white;
 }
 
-li:hover
+.liste li:hover
 {
-    color: rgb(189, 131, 66); ;
+    color: #ae9f6a;
     padding-left: 25px;
 }
 /* -------------------------- Fin de la navbar -------------------------- */
