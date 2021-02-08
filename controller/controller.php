@@ -11,9 +11,9 @@ Article upload !
   if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     //identifiants mysql
-    $host = "localhost";
+    $host = "127.0.0.1";
     $username = "root";
-    $password = "";
+    $password = "";  
     $database = "blogtest";
     
     $titre = $_POST["titre"]; //Le $_POST va aller chercher dans le formulaire "titre"

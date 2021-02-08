@@ -78,31 +78,38 @@ else { # Dans cette partie, on écrit le code que l'utilisateur administrateur v
             </div>
                 <div class="container">
                     <div class="mini1">
-                        <form method='post' action='deconnexion.php'> <input type='submit' value='Se déconnecter' /> </form>
-                        <form method="post" action="controller.php">
+                        <form method='post' action='./controller/controller_deco.php'> <input type='submit' value='Se déconnecter' /> </form>
+                            <form action="./controller/controller_paysage.php" method="post" enctype="multipart/form-data">
                             <input type="text" name="titre" placeholder=" Entrez votre nom" /><br />
                             <input  type="text" name="contenu" placeholder=" blablabla" /><br />
-                            <input type="submit" value="Submit" />
-                        </form>
-                    </div>
-                    <div class="mini2">
-                        <form action="upload.php" method="post" enctype="multipart/form-data">
-                            Select Image File to Upload:
                             <input type="file" name="file">
-                            <input type="submit" name="submit" value="Upload">
-                        </form>
-                    </div>
-                    <div class="mini3">
-#
-                    </div>
-                </div>
-                <!-- <form method="post" action="papillonDBconfig.php">
-                            <input type="text" name="nom" placeholder=" #" /><br />
-                            <input  type="text" name="explication" placeholder=" blablabla" /><br />
-                            <input type="submit" value="Submit" />
-                        </form>
-                        </form> -->
+                            <button type="submit" name="submit" value="Upload">Submit</button>
+                            </form> 
+
+                            Je te laisse upload des images sur le site pour faire des testes si tu le souhaite Julie :') Tu trouveras les images dans la catégorie "Paysages"
+                            </div>
+                            <div class="mini2">
+                            <form action="./controller/controller_papillon.php" method="post" enctype="multipart/form-data">
+                            <span>page papillon<br></span>
+                            <label>Nom</label>
+                            <input type="text" placeholder="1" name="nom">
+                            <label>Espece</label>
+                            <input type="text" placeholder="24" name="espece">
+                            <label>Famille</label>
+                            <input type="text" placeholder="2" name="famille">
+                            <label>Genre</label>
+                            <input type="text" placeholder="2414" name="genre">
+                            <label>Info</label>
+                            <input type="text" placeholder="3" name="info">
+                            Selectione l'image à upload :
+                            <input type="file" name="file">
+                            <button type="submit" name="submit" value="Upload">Submit</button>
+                            </form>
+                            </div>
 <?php
 }
+
+
+
 
 

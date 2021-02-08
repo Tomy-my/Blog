@@ -35,3 +35,8 @@
     font-family: 'ur';
     src: url('../fonts/Ubuntu-Regular.ttf');
 }
+@font-face
+{
+    font-family: 'kano';
+    src: url('../fonts/Kano.otf')
+}

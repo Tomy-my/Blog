@@ -40,7 +40,7 @@
 				<img src="images/img-01.png" alt="IMG">
 			</div>
 
-			<form class="contact1-form validate-form" method="post" action="formulaire.php">
+			<form class="contact1-form validate-form" method="post" action="./controller/controller_contact.php">
 				<span class="contact1-form-title">
 					Formulaire de contact
 				</span>

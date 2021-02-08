@@ -14,7 +14,7 @@ include("header.php"); ?>
 // Connexion à la base de données
 try
 {
-	$bdd = new PDO('mysql:host=localhost;dbname=blogtest;charset=utf8', 'root', '');
+	$bdd = new PDO('mysql:host=localhost;dbname=blogtomy;charset=utf8', 'root', '');
 }
 catch(Exception $e)
 {
@@ -22,7 +22,7 @@ catch(Exception $e)
 }
 
 // On récupère les 5 derniers article
-$req = $bdd->query('SELECT id, titre, contenu FROM billets ORDER BY contenu DESC LIMIT 0, 5');
+$req = $bdd->query('SELECT id, titre, contenu FROM paysages ORDER BY contenu DESC LIMIT 0, 5');
 
 while ($donnees = $req->fetch())
 {
@@ -47,10 +47,10 @@ $req->closeCursor();
                     <div id="photo">
 <?php
 // Include the database configuration file
-include 'dbConfig.php';
+include './controller/config_db.php';
 
 // Get images from the database
-$query = $db->query("SELECT * FROM images ORDER BY uploaded_on DESC");
+$query = $db->query("SELECT file_name FROM paysages ORDER BY uploaded_on DESC");
 
 
     while($row = $query->fetch_assoc()){
