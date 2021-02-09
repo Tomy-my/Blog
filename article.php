@@ -86,7 +86,7 @@ else { # Dans cette partie, on écrit le code que l'utilisateur administrateur v
                             <button type="submit" name="submit" value="Upload">Submit</button>
                             </form> 
 
-                            Je te laisse upload des images sur le site pour faire des testes si tu le souhaite Julie :') Tu trouveras les images dans la catégorie "Paysages"
+                            upload rien du tout, les changements d'aujourd'hui 08/02 créé un bug au niveau de l'affichage 
                             </div>
                             <div class="mini2">
                             <form action="./controller/controller_papillon.php" method="post" enctype="multipart/form-data">
