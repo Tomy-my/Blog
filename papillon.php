@@ -2,48 +2,43 @@
 
  include("header.php"); ?>
 
+<div id="info_bulle_G">
+    <h2> Papillon </h2>
+    <h3> Les Lépidoptères</h3>
+    <p>
+        sont un ordre d'insectes holométaboles dont la forme adulte (ou imago) 
+        est communément appelée papillon, dont la larve est appelée chenille, et la nymphe chrysalide.
+        <br><br>
+        C'est un réél défi de réussir à les prendres en photo, même quand nous sommes dans une serre à papillons ou des centaines vole autour de toi. 
+        Il faut être patient et attendre le bon moment au bonne endroit pour réussir à faire le plus beau cliché !
+    </p>
+</div>
+<?php
+        include './controller/config_db.php';
+        
+        $query = $db->query("SELECT id, nom, espece, famille, genre, info, file_name FROM papillons ORDER BY uploaded_on DESC");
+
+        while($row = $query->fetch_assoc()){
+            $imageURL = 'uploads/'.$row["file_name"];
+    ?>
 
 <div id="boite_papillon">
-<img src="images/01011462_polarr.jpg">
-    <div id="info_bulle_G">
-        <h2> Lepidoptera </h2>
-        <h3> Lorem ipsum bla bla bla </h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque adipisci asperiores 
-        minus dolore provident voluptates voluptatum dolorum! Nobis tempora et quam minus similique. 
-        Alias a sunt quam laudantium aperiam reiciendis! minus dolore provident voluptates voluptatum dolorum! Nobis tempora et quam minus similique. 
-        Alias a sunt quam laudantium aperiam reiciendis!
-        minus dolore provident voluptates voluptatum dolorum! Nobis tempora et quam minus similique. 
-        </p>
+    <div id="cadre_papillon"> 
+        <img src="<?php echo $imageURL; ?>" alt="" />
     </div>
 
-<?php
-// Connexion à la base de données
-try
-{
-	$bdd = new PDO('mysql:host=localhost;dbname=blogtomy;charset=utf8', 'root', '');
-}
-catch(Exception $e)
-{
-        die('Erreur : '.$e->getMessage());
-}
-
-// On récupère les 5 derniers article
-$req = $bdd->query('SELECT id, nom, espece, famille, genre, info FROM papillons ORDER BY info DESC LIMIT 0, 5');
-
-while ($donnees = $req->fetch())
-{
-?>
 
     <div id="info_bulle_D">
-        <h3> <?php echo htmlspecialchars($donnees['nom']); ?> </h3>
+        <h3> <?php echo htmlspecialchars($row['nom']); ?> </h3>
         <ui>
-            <li> Espèce&nbsp;&nbsp;: <?php echo htmlspecialchars($donnees['espece']); ?> </li>
-            <li> Famille : <?php echo htmlspecialchars($donnees['famille']); ?> </li>
-            <li> Genre&nbsp;&nbsp;&nbsp;: <?php echo htmlspecialchars($donnees['genre']); ?> </li>
+            <li> Espèce&nbsp;&nbsp;: <?php echo htmlspecialchars($row['espece']); ?> </li>
+            <li> Famille : <?php echo htmlspecialchars($row['famille']); ?> </li>
+            <li> Genre&nbsp;&nbsp;&nbsp;: <?php echo htmlspecialchars($row['genre']); ?> </li>
             <li> Info&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : </li>
-        <p> <?php echo htmlspecialchars($donnees['info']); ?> </p>
+        </ui>
+        <p> <?php echo htmlspecialchars($row['info']); ?> </p>
     </div>
-<?php
-}
-    $req->closeCursor();
+</div>
+<?php 
+    }
 ?>

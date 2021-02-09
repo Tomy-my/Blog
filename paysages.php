@@ -5,39 +5,23 @@ include("header.php"); ?>
 <body>
     <div class="flex_paysages">
         <div class="boitetexte" data-anim-start="1000" data-anim-duration="500">
-            <?php
-            // Connexion à la base de données
-            try
-            {
-                $bdd = new PDO('mysql:host=localhost;dbname=blogtomy;charset=utf8', 'root', '');
-            }
-            catch(Exception $e)
-            {
-                    die('Erreur : '.$e->getMessage());
-            }
-
-            $req = $bdd->query('SELECT id, titre, contenu FROM paysages ORDER BY contenu DESC LIMIT 0, 9');
-
-            while ($donnees = $req->fetch())
-            {
-            ?>
 
             <div id="titre">
-                <?php echo htmlspecialchars($donnees['titre']); ?>
+                Paysage
             </div>
     
             <div id="texte">
-                <?php echo nl2br(htmlspecialchars($donnees['contenu'])); ?>
+            Voici une compilation de mes plus beaux clichés photographiques de paysage au alentour de chez moi.<br><br>
+            La plupart du temps, j'aime prendre le ciel et le soleil en photo, chaque jour une nouvelle teinte de couleur envahi le ciel, je trouve ca si magnifique, 
+            cela me procure un sentiment de liberté.<br>
+            Pourtant, j'emprisonne cette liberté dans mes clichés à jamais !
             </div>
-            <?php
-            } 
-            $req->closeCursor();
-            ?>
+
             <a href="https://www.instagram.com/_dakor/"> <img id="insta" src="images/instagram.png"> </a>
         </div>
         <div class="box_photo_cadre">
             <div id="photo">
-                <?php
+            <?php
                 // Include the database configuration file
                 include './controller/config_db.php';
 
@@ -49,7 +33,8 @@ include("header.php"); ?>
                     $imageURL = 'uploads/'.$row["file_name"];
                 ?>
                 <img src="<?php echo $imageURL; ?>" alt="" />
-                <?php }
+                <?php
+                 }
                 ?>
     
             </div>

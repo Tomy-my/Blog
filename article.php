@@ -40,7 +40,7 @@ if (!isset($_SESSION['connecte']) or $_SESSION['connecte'] == false) { # on vér
  
 else { # Dans cette partie, on écrit le code que l'utilisateur administrateur verras
 
-    ?>
+?>
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -59,53 +59,71 @@ else { # Dans cette partie, on écrit le code que l'utilisateur administrateur v
                         <div id="T">T</div>
                         <div id="O">O</div>
                         <div id="M">M</div>
-                        <div id="Y">Y</div></a> <br> &nbsp  
+                        <div id="Y">Y</div></a> <br> &nbsp;  
                         <div id="pho">Photographie</div>
                 </div>
                 <a href="index.php" class="home">HOME</a>
                 <div class="photo">
                     <a href="#" class="photo">PHOTOGRAPHIES</a>
-                <div class="liste">
-                    <ul>
-                    <a href="paysages.php"><li>Paysage</li></a>
-                    <a href="papillon.php"><li>Papillon</li></a>
-                    <a href="voiture.php"><li>Voiture</li></a>
-                    <a href="#"><li>En création</li></a>
-                    </ul>
+                        <div class="liste">
+                            <ul>
+                                <a href="paysages.php"><li>Paysage</li></a>
+                                <a href="papillon.php"><li>Papillon</li></a>
+                                <a href="voiture.php"><li>Voiture</li></a>
+                                <a href="#"><li>En création</li></a>
+                            </ul>
+                        </div>
                 </div>
-                </div>
-                <a href="#" class="contact">CONTACT</a>
+                    <a href="#" class="contact">CONTACT</a>
             </div>
+
+
                 <div class="container">
-                    <div class="mini1">
-                        <form method='post' action='./controller/controller_deco.php'> <input type='submit' value='Se déconnecter' /> </form>
+                    <div class="paysage_admin">
+                        <form method='post' action='./controller/controller_deco.php'>
+                            <input type='submit' value='Se déconnecter' /> 
+                        </form>
+                        <span><br>page paysage<br><br></span>
                             <form action="./controller/controller_paysage.php" method="post" enctype="multipart/form-data">
-                            <input type="text" name="titre" placeholder=" Entrez votre nom" /><br />
-                            <input  type="text" name="contenu" placeholder=" blablabla" /><br />
-                            <input type="file" name="file">
-                            <button type="submit" name="submit" value="Upload">Submit</button>
+                                <input type="file" name="file">
+                                <button type="submit" name="submit" value="Upload">Upload !</button>
                             </form> 
 
-                            upload rien du tout, les changements d'aujourd'hui 08/02 créé un bug au niveau de l'affichage 
+                          <span>Yo Julie, je te laisse upload des photos et tester le reste  </Span>
+
+
+
+
+                        </div>
+                    <div class="papillon_admin">
+                        <form action="./controller/controller_papillon.php" method="post" enctype="multipart/form-data">
+                            <div class="nom_papi">
+                                <input type="text" placeholder="Nom du papillon" name="nom">
                             </div>
-                            <div class="mini2">
-                            <form action="./controller/controller_papillon.php" method="post" enctype="multipart/form-data">
-                            <span>page papillon<br></span>
-                            <label>Nom</label>
-                            <input type="text" placeholder="1" name="nom">
-                            <label>Espece</label>
-                            <input type="text" placeholder="24" name="espece">
-                            <label>Famille</label>
-                            <input type="text" placeholder="2" name="famille">
-                            <label>Genre</label>
-                            <input type="text" placeholder="2414" name="genre">
-                            <label>Info</label>
-                            <input type="text" placeholder="3" name="info">
-                            Selectione l'image à upload :
-                            <input type="file" name="file">
-                            <button type="submit" name="submit" value="Upload">Submit</button>
-                            </form>
+                            <div class="espece_papi">
+                                <input type="text" placeholder="L'espece du papillon" name="espece">
                             </div>
+                            <div class="famille_papi">
+                                <input type="text" placeholder="La famille du papillon" name="famille">
+                            </div>
+                            <div class="genre_papi">
+                                <input type="text" placeholder="Le genre du papillon" name="genre">
+                            </div>
+                            <div class="info_papi">
+                                <input type="text" placeholder="Quelque information.." name="info">
+                            </div>
+                            <div class="file_papi">
+                                <input type="file" name="file">
+                            </div>
+                            <div class="envoyer_papi">
+                                <button type="submit" name="submit" value="Upload">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                <div class="voiture_admin">
+                    #
+                </div>
+            </div>
 <?php
 }
 

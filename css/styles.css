@@ -349,50 +349,62 @@ h1
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
-    padding-top: 15px;
+    padding-top: 30px;
+    margin-bottom: 38px;
     height: 630px;
     background-color: #03030391;
     color: rgb(255, 255, 255);
     cursor: default;
+    border: solid #ae9f6a 1px ;
 }
 
 
-#boite_papillon img
+#cadre_papillon img
 {
-    position: absolute;
+    position: relative;
     order: 1;
+    left: 123px;
     width: 800px;
+    height: 600px;
     transition-duration: 0.6s;
+
 }
-#boite_papillon img:hover
+#cadre_papillon img:hover
 {
     z-index: 10;
     width: 1000px;
+    height: 800px;
 }
 
 #info_bulle_G
 {
-    position: absolute;
+    position: fixed;
     width: 230px;
-    padding-right: 1170px;
-    padding-top: 25px;
+    top: 160px;
+    left: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     animation-name: bulle;
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
-    animation-duration: 0.6s;
+    animation-duration: 0.7s;
+    color: rgb(255, 255, 255);
+    font-family: 'ul';
 }
 @keyframes bulle {                         
     0% {
-        padding-right: 1800px;
+        left: -300px;
     }
     100% {
-        padding-right: 1170px;
+        left: 100px;
     }
   }
 #info_bulle_G h2
 {
     font-size: 38px;
-    margin-left: -60px;
+    margin-left: -35px;
 
 }
 #info_bulle_G h3
@@ -417,15 +429,17 @@ h1
 
 #info_bulle_D
 {
-    position: absolute;
+    position: relative;
     width: 230px;
     padding-top: 70px;
-    padding-left: 1200px;
+    left: 209px;
     font-size: 15px;
     animation-name: hop;
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
     animation-duration: 0.6s;
+    z-index: 1;
+    
 }
 @keyframes hop {                         
     0% {
@@ -478,30 +492,124 @@ h1
 .container
 {
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
+    background-color: blanchedalmond;
+    height: 100vh;
 }
 
-.mini1
+.paysage_admin
 {
     width: 150px;
-    height: 250px;
+    height: 280px;
     background-color: lightslategray;
     color: aliceblue;
 }
 
-.mini2
+
+
+
+
+
+
+
+
+
+.papillon_admin
 {
-    width: 150px;
-    height: 250px;
+    width: 80vh;
+    height: 70vh;
+    margin-top: 30px;
     background-color: lightslategray;
     color: aliceblue;
+    border-radius: 15px;
+    text-align: center;
+}
+.nom_papi input
+{
+        height: 50px;
+        border-radius: 25px;
+        padding: 0 30px;
+        border: solid 0px;
+        padding-bottom: 10px;
+        margin-top: 30px;
+        margin-bottom: 10px;
 }
 
-.mini3
+.nom_papi input:hover
+{
+    color: brown;
+}
+
+.espece_papi input
+{
+    height: 50px;
+    border-radius: 25px;
+    padding: 0 30px;
+    border: solid 0px;
+    padding-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.famille_papi input
+{
+    height: 50px;
+    border-radius: 25px;
+    padding: 0 30px;
+    border: solid 0px;
+    padding-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.genre_papi input
+{
+    height: 50px;
+    border-radius: 25px;
+    padding: 0 30px;
+    border: solid 0px;
+    padding-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.info_papi input
+{
+    height: 50px;
+    border-radius: 25px;
+    padding: 0 30px;
+    border: solid 0px;
+    padding-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.file_papi input
+{
+    height: 50px;
+    border-radius: 25px;
+    padding: 0 30px;
+    border: solid 0px;
+    padding-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.envoyer_papi input
+{
+    height: 50px;
+    border-radius: 25px;
+    padding: 0 30px;
+    border: solid 0px;
+    padding-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+.voiture_admin
 {
 
     width: 150px;
     height: 250px;
     background-color: lightslategray;
 }
+
