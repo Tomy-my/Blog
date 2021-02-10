@@ -6,7 +6,7 @@
 
 body
 {
-    background-color: #161616;
+    background-color: #202020;
 }
 
 
@@ -38,7 +38,7 @@ a:link
     justify-content: flex-end;
     height: 100px;
     width: auto;
-    background-color: #03030391;
+    background-color: #111;
     color: rgb(255, 255, 255);
     z-index: 5;
     animation-name: chargement;
@@ -247,19 +247,23 @@ h1
     display: flex;
     justify-content: space-around;
     flex-direction: row;
-    background-color: #161616;
+    background-color: #202020;
     z-index: 1;
     margin-top: 30px;
 }
 .boitetexte
 {
+    position: fixed;
     order: 1;
     width: 340px;
+    height: 520px;
+    top: 170px;
+    left: 60px;
     padding-top: 20px;
     color: white;
     font-family: 'ul';
     text-align: center;
-    background-color: #161616;
+    background-color: #202020;
     border: solid #ae9f6a 1px ;
     letter-spacing: 2px;
     cursor: default;
@@ -281,11 +285,12 @@ h1
   
 #texte
 {
-    position: fixed;
-    top: 235px;
     width: 320px;
+    padding-top: 45px;
     padding-left: 10px;
     font-size: 13px;
+    line-height: 30px;
+    letter-spacing: 2px;
     animation-name: ascenseur;
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
@@ -293,7 +298,7 @@ h1
 }
 #titre
 {
-    position: fixed;
+    padding-top: 5px;
     color: #ae9f6a;
     width: 340px;
     font-size: 40px;
@@ -308,13 +313,14 @@ h1
     order: 2;
     min-width: 145vh;
     min-height: 84vh;
-    background-color: #161616;
+    background-color: #202020;
 }
 
 #photo img
 {
     display: block;
     margin: auto;
+    margin-left: 420px;
     width: 140vh;
     margin-bottom: 50px;
     animation-name: zoom;
@@ -337,14 +343,13 @@ h1
 {
     position: fixed;
     width: 30px;
-    left: 190px;
-    padding-top: 290px;
+    margin-top: 15px;
 }
 
 
 #boite_papillon
 {
-    width: 165vh;
+    width: 82%;
     display: flex;
     justify-content: center;
     margin-left: auto;
@@ -352,8 +357,8 @@ h1
     margin-top: 20px;
     padding-top: 30px;
     margin-bottom: 38px;
-    /* height: 80vh; */
-    background-color: #03030391;
+    height: auto;
+    background-color: #111;
     color: rgb(255, 255, 255);
     cursor: default;
     border: solid #ae9f6a 1px ;
@@ -365,28 +370,28 @@ h1
     position: relative;
     order: 1;
     top: -15px;
-    width: 100%;
-    height: 75vh;
+    width: auto;
+    height: 589.5px;
     transition-duration: 0.6s;
 
 }
 #cadre_papillon img:hover
 {
-    z-index: 10;
-    height: 90vh;
+    
+    height: 730px;
 }
 
 
 #info_bulle_G
 {
     position: relative;
-    width: 165vh; 
+    width: 82%; 
     text-align: center;
     top: 25px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 60px;
-    background-color: #0a0a0a;
+    background-color: #111;
     border: solid #ae9f6a 1px ;
     animation-name: bulle;
     animation-iteration-count: 1;
@@ -489,116 +494,236 @@ h1
 }
 
 
+
+
+
+
 .container
 {
     display: flex;
     justify-content: space-around;
-    background-color: blanchedalmond;
-    height: 100vh;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .paysage_admin
 {
-    width: 150px;
-    height: 280px;
-    background-color: lightslategray;
-    color: aliceblue;
+    order: 1;
+    position: relative;
+    background-color: #111;
+    border-radius: 20px;
+    box-sizing: border-box;
+    height: 740px;
+    padding: 20px;
+    width: 320px;
+        color: #eee;
+    font-family: sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    animation-name: colonne1;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 0.9s;
 }
 
-
-
-
-
-
-
-
-
-
-.papillon_admin
-{
-    width: 80vh;
-    height: 70vh;
-    margin-top: 30px;
-    background-color: lightslategray;
-    color: aliceblue;
-    border-radius: 15px;
+.upload {
+    background-color: #08d;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    cursor: pointer;
+    font-size: 18px;
+    height: 50px;
+    margin-top: 38px;
+    outline: 0;
     text-align: center;
-}
-.nom_papi input
-{
-        height: 50px;
-        border-radius: 25px;
-        padding: 0 30px;
-        border: solid 0px;
-        padding-bottom: 10px;
-        margin-top: 30px;
-        margin-bottom: 10px;
+    width: 100%;
+    transition-duration: 0.4s;
+  }
+  
+  .upload:hover {
+    background-color: rgb(36, 139, 36);
+  }
+  .upload:active{
+      background-color: green;
+  }
+  @keyframes colonne1 {                         
+    0% {
+        left: -450px;
+    }
+    60% {
+        left: 25px;
+    }
+    80% {
+        left: -15px;
+    }
+    100% {
+       left: 0px;
+    }
 }
 
-.nom_papi input:hover
-{
-    color: brown;
-}
 
-.espece_papi input
-{
-    height: 50px;
-    border-radius: 25px;
-    padding: 0 30px;
-    border: solid 0px;
-    padding-bottom: 10px;
+
+
+
+
+
+
+
+
+  
+.form {
+    order: 2;
+    position: relative;
+    background-color: #111;
+    border-radius: 20px;
+    box-sizing: border-box;
+    height: 740px;
+    padding: 20px;
+    width: 320px;
+    animation-name: colonne2;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 0.8s;
+  }
+  
+  .title {
+    color: #eee;
+    font-family: sans-serif;
+    font-size: 36px;
+    font-weight: 600;
     margin-top: 30px;
-    margin-bottom: 10px;
-}
-.famille_papi input
-{
+  }
+  
+  .subtitle {
+    color: #eee;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+  
+  .input-container {
     height: 50px;
-    border-radius: 25px;
-    padding: 0 30px;
-    border: solid 0px;
-    padding-bottom: 10px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .ic1 {
+    margin-top: 40px;
+  }
+  
+  .ic2 {
     margin-top: 30px;
-    margin-bottom: 10px;
-}
-.genre_papi input
-{
+  }
+  
+  .input {
+    background-color: #202020;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    font-size: 18px;
+    height: 100%;
+    outline: 0;
+    padding: 4px 20px 0;
+    width: 100%;
+  }
+  
+  .cut {
+    background-color: #111;
+    border-radius: 10px;
+    height: 20px;
+    left: 20px;
+    position: absolute;
+    top: -20px;
+    transform: translateY(0);
+    transition: transform 200ms;
+    width: 76px;
+  }
+  
+  .cut-short {
+    width: 50px;
+  }
+  
+  .input:focus ~ .cut,
+  .input:not(:placeholder-shown) ~ .cut {
+    transform: translateY(8px);
+  }
+  
+  .placeholder {
+    color: #65657b;
+    font-family: sans-serif;
+    left: 20px;
+    line-height: 14px;
+    pointer-events: none;
+    position: absolute;
+    transform-origin: 0 50%;
+    transition: transform 200ms, color 200ms;
+    top: 20px;
+  }
+  
+  .input:focus ~ .placeholder,
+  .input:not(:placeholder-shown) ~ .placeholder {
+    transform: translateY(-30px) translateX(10px) scale(0.75);
+  }
+  
+  .input:not(:placeholder-shown) ~ .placeholder {
+    color: rgb(36, 139, 36);
+  }
+  
+  .input:focus ~ .placeholder {
+    color: #dc2f55;
+  }
+  
+  .submit {
+    background-color: #08d;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    cursor: pointer;
+    font-size: 18px;
     height: 50px;
-    border-radius: 25px;
-    padding: 0 30px;
-    border: solid 0px;
-    padding-bottom: 10px;
-    margin-top: 30px;
-    margin-bottom: 10px;
-}
-.info_papi input
-{
-    height: 50px;
-    border-radius: 25px;
-    padding: 0 30px;
-    border: solid 0px;
-    padding-bottom: 10px;
-    margin-top: 30px;
-    margin-bottom: 10px;
-}
-.file_papi input
-{
-    height: 50px;
-    border-radius: 25px;
-    padding: 0 30px;
-    border: solid 0px;
-    padding-bottom: 10px;
-    margin-top: 30px;
-    margin-bottom: 10px;
-}
-.envoyer_papi input
-{
-    height: 50px;
-    border-radius: 25px;
-    padding: 0 30px;
-    border: solid 0px;
-    padding-bottom: 10px;
-    margin-top: 30px;
-    margin-bottom: 10px;
+    margin-top: 38px;
+    outline: 0;
+    text-align: center;
+    width: 100%;
+    transition-duration: 0.4s;
+  }
+  
+  .submit:hover {
+    background-color: rgb(36, 139, 36);
+  }
+  .submit:active{
+      background-color: green;
+  }
+
+  .file_papi{
+      margin-top: 30px;
+      background-color: #202020;
+      color: #65657b;;
+      width: 94%;
+      height: 40px;
+      border-radius: 12px;
+      padding-left: 15px;
+      padding-top: 15px;
+  }
+  
+  @keyframes colonne2 {                         
+    0% {
+        left: -950px;
+    }
+    60% {
+        left: 25px;
+    }
+    80% {
+        left: -15px;
+    }
+    100% {
+       left: 0px;
+    }
 }
 
 
@@ -607,9 +732,31 @@ h1
 
 .voiture_admin
 {
-
-    width: 150px;
-    height: 250px;
-    background-color: lightslategray;
+    order: 3;
+    position: relative;
+    background-color: #111;
+    border-radius: 20px;
+    box-sizing: border-box;
+    height: 740px;
+    padding: 20px;
+    width: 320px;
+    animation-name: colonne3;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 0.7s;
 }
 
+@keyframes colonne3 {                         
+    0% {
+        left: -1500px;
+    }
+    60% {
+        left: 25px;
+    }
+    80% {
+        left: -15px;
+    }
+    100% {
+       left: 0px;
+    }
+}

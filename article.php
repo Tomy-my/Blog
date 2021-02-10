@@ -74,7 +74,7 @@ else { # Dans cette partie, on écrit le code que l'utilisateur administrateur v
                             </ul>
                         </div>
                 </div>
-                    <a href="#" class="contact">CONTACT</a>
+                    <a href="contact.php" class="contact">CONTACT</a>
             </div>
 
 
@@ -83,47 +83,53 @@ else { # Dans cette partie, on écrit le code que l'utilisateur administrateur v
                         <form method='post' action='./controller/controller_deco.php'>
                             <input type='submit' value='Se déconnecter' /> 
                         </form>
-                        <span><br>page paysage<br><br></span>
-                            <form action="./controller/controller_paysage.php" method="post" enctype="multipart/form-data">
-                                <input type="file" name="file">
-                                <button type="submit" name="submit" value="Upload">Upload !</button>
-                            </form> 
-
-                          <span>Yo Julie, je te laisse upload des photos et tester le reste  </Span>
-
-
-
-
-                        </div>
-                    <div class="papillon_admin">
-                        <form action="./controller/controller_papillon.php" method="post" enctype="multipart/form-data">
-                            <div class="nom_papi">
-                                <input type="text" placeholder="Nom du papillon" name="nom">
+                            <div class="title">Paysage</div>
+                            <div class="subtitle">Veuillez sélectionner une image à upload</div>
+                        <form action="./controller/controller_paysage.php" method="post" enctype="multipart/form-data">
+                            <input type="file" class="file_papi" name="file">
+                            <button type="submit" class="upload" name="submit" value="Upload">Upload !</button>
+                        </form> 
+                    </div>
+                    <div class="form">
+                        <form action="./controller/controller_papillon.php" method="post" enctype="multipart/form-data">                       
+                            <div class="title">Papillon</div>
+                            <div class="subtitle">Veuillez entrer les caractéristiques du papillon</div>
+                            <div class="input-container ic1">
+                                <input id="firstname" class="input" type="text" placeholder=" " name="nom" />
+                            <div class="cut"></div>
+                                <label for="firstname" class="placeholder">Nom</label>
                             </div>
-                            <div class="espece_papi">
-                                <input type="text" placeholder="L'espece du papillon" name="espece">
+                            <div class="input-container ic2">
+                                <input id="lastname" class="input" type="text" placeholder=" " name="espece"/>
+                            <div class="cut"></div>
+                                <label for="lastname" class="placeholder">Espèce</label>
                             </div>
-                            <div class="famille_papi">
-                                <input type="text" placeholder="La famille du papillon" name="famille">
+                            <div class="input-container ic2">
+                                <input id="lastname" class="input" type="text" placeholder=" " name="famille"/>
+                                <div class="cut"></div>
+                                <label for="lastname" class="placeholder">Famille</label>
                             </div>
-                            <div class="genre_papi">
-                                <input type="text" placeholder="Le genre du papillon" name="genre">
+                            <div class="input-container ic2">
+                                <input id="lastname" class="input" type="text" placeholder=" " name="genre"/>
+                            <div class="cut"></div>
+                                <label for="lastname" class="placeholder">Genre</label>
                             </div>
-                            <div class="info_papi">
-                                <input type="text" placeholder="Quelque information.." name="info">
+                            <div class="input-container ic2">
+                                <input id="lastname" class="input" type="text" placeholder=" " name="info"/>
+                            <div class="cut"></div>
+                                <label for="lastname" class="placeholder">Information</label>
                             </div>
                             <div class="file_papi">
                                 <input type="file" name="file">
                             </div>
-                            <div class="envoyer_papi">
-                                <button type="submit" name="submit" value="Upload">Submit</button>
-                            </div>
+                            <button type="text" class="submit" name="submit">Envoyer les données !</button>
                         </form>
                     </div>
-                <div class="voiture_admin">
+                    <div class="voiture_admin">
                     #
+                    </div>
                 </div>
-            </div>
+
 <?php
 }
 

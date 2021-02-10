@@ -306,7 +306,7 @@ iframe {
   min-height: 100%;
   padding: 15px;
 
-  background: #161616;
+  background: #202020;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -325,6 +325,7 @@ iframe {
   align-items: center;
   margin-top: -150px;
   padding: 40px 130px 40px 148px;
+  border: solid #ae9f6a 1px ;
 }
 
 /*------------------------------------------------------------------
@@ -438,7 +439,7 @@ textarea.input1 + .shadow-input1 {
   min-width: 193px;
   height: 50px;
   border-radius: 25px;
-  background: #161616;
+  background: #202020;
   font-family: Montserrat-Bold;
   font-size: 15px;
   line-height: 1.5;
