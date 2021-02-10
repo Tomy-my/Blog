@@ -7,10 +7,6 @@
 body
 {
     background-color: #161616;
-    animation-name: chargement;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in;
-    animation-duration: 1.8s;
 }
 
 
@@ -45,6 +41,10 @@ a:link
     background-color: #03030391;
     color: rgb(255, 255, 255);
     z-index: 5;
+    animation-name: chargement;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1.8s;
 }
 
 .logo
@@ -344,6 +344,7 @@ h1
 
 #boite_papillon
 {
+    width: 165vh;
     display: flex;
     justify-content: center;
     margin-left: auto;
@@ -351,7 +352,7 @@ h1
     margin-top: 20px;
     padding-top: 30px;
     margin-bottom: 38px;
-    height: 630px;
+    /* height: 80vh; */
     background-color: #03030391;
     color: rgb(255, 255, 255);
     cursor: default;
@@ -363,29 +364,30 @@ h1
 {
     position: relative;
     order: 1;
-    left: 123px;
-    width: 800px;
-    height: 600px;
+    top: -15px;
+    width: 100%;
+    height: 75vh;
     transition-duration: 0.6s;
 
 }
 #cadre_papillon img:hover
 {
     z-index: 10;
-    width: 1000px;
-    height: 800px;
+    height: 90vh;
 }
+
 
 #info_bulle_G
 {
-    position: fixed;
-    width: 230px;
-    top: 160px;
-    left: 30px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    position: relative;
+    width: 165vh; 
+    text-align: center;
+    top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+    background-color: #0a0a0a;
+    border: solid #ae9f6a 1px ;
     animation-name: bulle;
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
@@ -395,21 +397,29 @@ h1
 }
 @keyframes bulle {                         
     0% {
-        left: -300px;
+        top: -395px;
+    }
+    60% {
+        top: 25px;
+    }
+    80% {
+        top: -15px;
     }
     100% {
-        left: 100px;
+       top: 25px;
     }
+
   }
 #info_bulle_G h2
 {
     font-size: 38px;
     margin-left: -35px;
+    margin-top: 15px;
 
 }
 #info_bulle_G h3
 {
-    padding-top: 20px;
+    padding-top: 15px;
     color: #ae9f6a;
     font-family: 'ul';
     font-weight: lighter;
@@ -419,8 +429,12 @@ h1
 }
 #info_bulle_G p
 {
+    width: 850px;
     font-size: 12px;
     padding-top: 40px;
+    padding-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
     letter-spacing: 2px;
     line-height: 21px;
     text-align: center;
@@ -429,26 +443,12 @@ h1
 
 #info_bulle_D
 {
-    position: relative;
     width: 230px;
     padding-top: 70px;
-    left: 209px;
+    margin-left: 100px;
     font-size: 15px;
-    animation-name: hop;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in;
-    animation-duration: 0.6s;
-    z-index: 1;
-    
 }
-@keyframes hop {                         
-    0% {
-        top: 560px
-    }
-    100% {
-        top: 160px
-    }
-  }
+    
 
 
 #info_bulle_D h2

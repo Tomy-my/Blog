@@ -1,7 +1,6 @@
 <?php $title = "Papillon"; 
 
  include("header.php"); ?>
-
 <div id="info_bulle_G">
     <h2> Papillon </h2>
     <h3> Les Lépidoptères</h3>
@@ -10,9 +9,9 @@
         est communément appelée papillon, dont la larve est appelée chenille, et la nymphe chrysalide.
         <br><br>
         C'est un réél défi de réussir à les prendres en photo, même quand nous sommes dans une serre à papillons ou des centaines vole autour de toi. 
-        Il faut être patient et attendre le bon moment au bonne endroit pour réussir à faire le plus beau cliché !
-    </p>
-</div>
+        Il faut être patient et attendre le bon moment au bon endroit pour réussir à faire le plus beau cliché !
+    </p> 
+ </div>
 <?php
         include './controller/config_db.php';
         
