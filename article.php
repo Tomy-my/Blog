@@ -61,6 +61,9 @@ else { # Dans cette partie, on écrit le code que l'utilisateur administrateur v
                         <div id="M">M</div>
                         <div id="Y">Y</div></a> <br> &nbsp;  
                         <div id="pho">Photographie</div>
+                        <form method='post' action='./controller/controller_deco.php'>
+                            <input type='submit' class="disconnect" value='Déconnexion' /> 
+                        </form>
                 </div>
                 <a href="index.php" class="home">HOME</a>
                 <div class="photo">
@@ -80,9 +83,6 @@ else { # Dans cette partie, on écrit le code que l'utilisateur administrateur v
 
                 <div class="container">
                     <div class="paysage_admin">
-                        <form method='post' action='./controller/controller_deco.php'>
-                            <input type='submit' value='Se déconnecter' /> 
-                        </form>
                             <div class="title">Paysage</div>
                             <div class="subtitle">Veuillez sélectionner une image à upload</div>
                         <form action="./controller/controller_paysage.php" method="post" enctype="multipart/form-data">

@@ -5,11 +5,11 @@
         <link rel="stylesheet" href="css/fonts.css" />
         <link rel="stylesheet" href="css/styles.css" />
         <link rel="stylesheet" href="css/resolutions.css" />
+        <link rel="stylesheet" href="css/background.css" />
         <link rel="icon" href="images/favicon.png" />
         <title>Tomy : <?php echo $title; ?></title>
     </head>
         <body>
-            
             <div class="navbar">
                 <div class="logo">
                     <a href="article.php">

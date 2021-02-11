@@ -38,9 +38,9 @@ a:link
     justify-content: flex-end;
     height: 100px;
     width: auto;
-    background-color: #111;
+    background-color: #1111118f;
     color: rgb(255, 255, 255);
-    z-index: 5;
+    z-index: 1000;
     animation-name: chargement;
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
@@ -263,8 +263,9 @@ h1
     color: white;
     font-family: 'ul';
     text-align: center;
-    background-color: #202020;
+    background-color: rgb(24, 24, 24);
     border: solid #ae9f6a 1px ;
+    border-radius: 15px;
     letter-spacing: 2px;
     cursor: default;
     animation-name: ascenseur;
@@ -405,10 +406,10 @@ h1
         top: -395px;
     }
     60% {
-        top: 25px;
+        top: 20px;
     }
     80% {
-        top: -15px;
+        top: -10px;
     }
     100% {
        top: 25px;
@@ -502,8 +503,8 @@ h1
 {
     display: flex;
     justify-content: space-around;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .paysage_admin
@@ -511,15 +512,17 @@ h1
     order: 1;
     position: relative;
     background-color: #111;
+    margin-top: 30px;
     border-radius: 20px;
     box-sizing: border-box;
     height: 740px;
     padding: 20px;
     width: 320px;
-        color: #eee;
+    color: #eee;
     font-family: sans-serif;
     font-size: 36px;
     font-weight: 600;
+    border: solid #ae9f6a 1px ;
     animation-name: colonne1;
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
@@ -566,9 +569,27 @@ h1
 
 
 
+.disconnect {
+    position: relative;
+    top: -89px;
+    left: 100px;
+    background-color: #08d;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    cursor: pointer;
+    font-size: 15px;
+    height: 26px;
+    outline: 0;
+    text-align: center;
+    width: 10%;
+    transition-duration: 0.4s;
+}
 
-
-
+.disconnect:hover{
+    background-color: rgb(206, 22, 22);
+}
 
 
 
@@ -576,12 +597,14 @@ h1
 .form {
     order: 2;
     position: relative;
+    margin-top: 30px;
     background-color: #111;
     border-radius: 20px;
     box-sizing: border-box;
     height: 740px;
     padding: 20px;
     width: 320px;
+    border: solid #ae9f6a 1px ;
     animation-name: colonne2;
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
@@ -735,11 +758,13 @@ h1
     order: 3;
     position: relative;
     background-color: #111;
+    margin-top: 30px;
     border-radius: 20px;
     box-sizing: border-box;
     height: 740px;
     padding: 20px;
     width: 320px;
+    border: solid #ae9f6a 1px ;
     animation-name: colonne3;
     animation-iteration-count: 1;
     animation-timing-function: ease-in;

@@ -2,29 +2,31 @@
 
 include("header.php"); ?>
 
-<style>
-body
-{
-    background-image: url("images/01011094_polarr.jpg");  /*en attendant le php */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-}
 
-</Style>
+
 <div class="acceuil">
     <h2>Welcome to</h2>
     <br>
     <h1>My Photography Blog </h1>
 </div>
 
+<ul class="cb-slideshow">
+    <li>
+        <span>Image 01</span>
+    </li>
+    <li>
+        <span>Image 02</span>
+    </li>
+    <li>
+        <span>Image 03</span>
+    </li>
+</ul>
 
 
 
 
 
 
+</body>
 
-    </body>
 </html>

@@ -1,0 +1,53 @@
+.cb-slideshow,
+.cb-slideshow:after { 
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -10; 
+}
+.cb-slideshow li span { 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: transparent;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 0;
+    z-index: -10; 
+    animation: imageAnimation 45s linear infinite 0s; 
+}
+
+
+ .cb-slideshow li:nth-child(1) span { 
+    background-image: url('../images/01000936.jpg');
+} 
+
+.cb-slideshow li:nth-child(2) span {
+    background-image: url('../images/01011462_polarr.jpg');
+    animation-delay: 15s;  
+}
+
+.cb-slideshow li:nth-child(3) span { 
+    background-image: url('../images/01011488_polarr.jpg');
+    animation-delay: 30s; 
+}
+
+
+@keyframes imageAnimation { 
+    0% { opacity: 0; animation-timing-function: ease-in; }
+    16% { opacity: 1; animation-timing-function: ease-out; }
+    33% { opacity: 1 }
+    48% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+
+.no-cssanimations .cb-slideshow li span{
+	opacity: 1;
+}
