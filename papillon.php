@@ -6,9 +6,9 @@
     <h3> Les Lépidoptères</h3>
     <p>
         sont un ordre d'insectes holométaboles dont la forme adulte (ou imago) 
-        est communément appelée papillon, dont la larve est appelée chenille, et la nymphe chrysalide.
+        est communément appelée papillon, <br>dont la larve est appelée chenille, et la nymphe chrysalide.
         <br><br>
-        C'est un réél défi de réussir à les prendres en photo, même quand nous sommes dans une serre à papillons ou des centaines vole autour de toi. 
+        C'est un réél défi de réussir à les prendres en photo, même quand nous sommes dans une serre à papillons ou<br> des centaines vole autour de toi. 
         Il faut être patient et attendre le bon moment au bon endroit pour réussir à faire le plus beau cliché !
     </p> 
  </div>
@@ -23,7 +23,7 @@
 
 <div id="boite_papillon">
     <div id="cadre_papillon"> 
-        <img src="<?php echo $imageURL; ?>" alt="" />
+        <img src="<?php echo $imageURL; ?>"/>
     </div>
 
 

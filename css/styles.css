@@ -365,21 +365,26 @@ h1
     border: solid #ae9f6a 1px ;
 }
 
+#cadre_papillon{
+    width: 73%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    margin-left: 15px;
+
+    z-index: 10;
+}
 
 #cadre_papillon img
 {
-    position: relative;
-    order: 1;
-    top: -15px;
-    width: auto;
-    height: 589.5px;
+    width: 100%;
     transition-duration: 0.6s;
 
 }
 #cadre_papillon img:hover
 {
     
-    height: 730px;
+    width: 110%;
 }
 
 
@@ -436,7 +441,7 @@ h1
 #info_bulle_G p
 {
     width: 850px;
-    font-size: 12px;
+    font-size: 13px;
     padding-top: 40px;
     padding-bottom: 25px;
     margin-left: auto;

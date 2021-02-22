@@ -3,7 +3,7 @@
 $dbHost     = "127.0.0.1";
 $dbUsername = "root";
 $dbPassword = "";
-$dbName     = "blogtomy";
+$dbName     = "local";
 
 
 $db = new mysqli($dbHost, $dbUsername, $dbPassword, $dbName);
