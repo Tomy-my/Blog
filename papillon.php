@@ -23,7 +23,7 @@
 
 <div id="boite_papillon">
     <div id="cadre_papillon"> 
-        <img src="<?php echo $imageURL; ?>" alt="" />
+        <img src="<?php echo $imageURL; ?>"/>
     </div>
 
 

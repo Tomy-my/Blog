@@ -14,7 +14,7 @@ Article upload !
     $host = "127.0.0.1";
     $username = "root";
     $password = "";  
-    $database = "blogtest";
+    $database = "local";
     
     $titre = $_POST["titre"]; //Le $_POST va aller chercher dans le formulaire "titre"
     $contenu = $_POST["contenu"];

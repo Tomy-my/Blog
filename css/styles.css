@@ -369,17 +369,18 @@ h1
 #cadre_papillon img
 {
     position: relative;
-    order: 1;
     top: -15px;
-    width: auto;
-    height: 589.5px;
+    /* width: auto;
+    height: 589.5px; */
+    width: 80%;
+    right: -15px;
     transition-duration: 0.6s;
 
 }
 #cadre_papillon img:hover
 {
     
-    height: 730px;
+    /* height: 730px; */
 }
 
 
