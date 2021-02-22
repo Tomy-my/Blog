@@ -20,22 +20,22 @@
     background-attachment: fixed;
     opacity: 0;
     z-index: -10; 
-    animation: imageAnimation 45s linear infinite 0s; 
+    animation: imageAnimation 40s linear infinite 0s; 
 }
 
 
  .cb-slideshow li:nth-child(1) span { 
-    background-image: url('../images/01000936.jpg');
+    background-image: url('../images/01011094_polarr.jpg');
 } 
 
 .cb-slideshow li:nth-child(2) span {
     background-image: url('../images/01011462_polarr.jpg');
-    animation-delay: 15s;  
+    animation-delay: 13s;  
 }
 
 .cb-slideshow li:nth-child(3) span { 
     background-image: url('../images/01011488_polarr.jpg');
-    animation-delay: 30s; 
+    animation-delay: 26s; 
 }
 
 
