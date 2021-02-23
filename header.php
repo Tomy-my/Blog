@@ -16,7 +16,7 @@
                         <div id="T">T</div>
                         <div id="O">O</div>
                         <div id="M">M</div>
-                        <div id="Y">Y</div></a> <br> &nbsp  
+                        <div id="Y">Y</div></a> <br> &nbsp; 
                         <div id="pho">Photographie</div>
                 </div>
                 <a href="index.php" class="home">HOME</a>
