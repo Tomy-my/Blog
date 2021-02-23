@@ -248,17 +248,13 @@ h1
     justify-content: space-around;
     flex-direction: row;
     background-color: #202020;
-    z-index: 1;
     margin-top: 30px;
 }
 .boitetexte
 {
-    position: fixed;
+    /* position: fixed; */
     order: 1;
     width: 340px;
-    height: 520px;
-    top: 170px;
-    left: 60px;
     padding-top: 20px;
     color: white;
     font-family: 'ul';
@@ -286,9 +282,10 @@ h1
   
 #texte
 {
+    position: fixed;
     width: 320px;
-    padding-top: 45px;
-    padding-left: 10px;
+    padding-top: 80px;
+    padding-left: 12px;
     font-size: 13px;
     line-height: 30px;
     letter-spacing: 2px;
@@ -299,7 +296,7 @@ h1
 }
 #titre
 {
-    padding-top: 5px;
+    position: fixed;
     color: #ae9f6a;
     width: 340px;
     font-size: 40px;
@@ -312,8 +309,7 @@ h1
 .box_photo_cadre
 {
     order: 2;
-    min-width: 145vh;
-    min-height: 84vh;
+    width: 65%;
     background-color: #202020;
 }
 
@@ -321,8 +317,7 @@ h1
 {
     display: block;
     margin: auto;
-    margin-left: 420px;
-    width: 140vh;
+    width: 90%;
     margin-bottom: 50px;
     animation-name: zoom;
     animation-iteration-count: 1;
@@ -344,7 +339,8 @@ h1
 {
     position: fixed;
     width: 30px;
-    margin-top: 15px;
+    margin-top: 420px;
+    margin-left: -14px;
 }
 
 

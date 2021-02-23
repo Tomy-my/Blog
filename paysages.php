@@ -4,7 +4,8 @@ include("header.php"); ?>
         
 <body>
     <div class="flex_paysages">
-        <div class="boitetexte" data-anim-start="1000" data-anim-duration="500">
+        <!-- <div class="boitetexte" data-anim-start="1000" data-anim-duration="500"> -->
+        <div class="boitetexte">
 
             <div id="titre">
                 Paysage
